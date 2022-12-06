@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <script>
+        function gambar() {
+            let drop_img = document.getElementById("dropdown_img").value;
+            let image = document.getElementById("image");
+
+            if (drop_img == "gorila") {
+                image.setAttribute("src","https://media.tenor.com/cf9w2O8Xg44AAAAi/gorilla.gif");
+                alert("ini gambar gorila")
+            }else if(drop_img == "singa") {
+                image.setAttribute("src","https://i0.wp.com/4.bp.blogspot.com/-aDdUyz7lv4I/WsCQ7j0ddrI/AAAAAAAAuxY/T2ZOVr9IHgE4sD1kPeB5GdlUcV5FGQ6LwCLcBGAs/s1600/Singa.jpg?resize=633%2C356&ssl=1") 
+                alert("ini gambar singa")
+            }else if (drop_img == "elang") {
+                image.setAttribute("src","https://jernih.co/wp-content/uploads/elang-1.jpg")
+                alert("ini gambar elang")
+            }
+        }
+        
+            
+    </script>
+</head>
+<body>
+    <select id="dropdown_img" onchange="gambar()">
+        <option value="">---Pilih Gambar</option>
+        <option value="gorila">Gorila</option>
+        <option value="singa">Singa</option>
+        <option value="elang">Elang</option>
+    </select>
+    <br>
+    <img alt="gambar" id="image">
+</body>
+</html>
