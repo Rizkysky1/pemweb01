@@ -1,0 +1,19 @@
+body{
+    background-color: wheat;
+}
+#header{
+    text-align: center;
+    background-color: orange;
+    height: 150px;
+}
+#soekarno{
+    background-color: yellow;
+    border: 1px dotted black;
+}
+ul li{
+    display: inline-block;
+    text-align: center;
+}
+.gambar{
+    text-align: center;
+}
